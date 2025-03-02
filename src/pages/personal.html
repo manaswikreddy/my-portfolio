@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Page</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        .download-button:active {
+            background-color: #388e3c;
+            transform: scale(0.95);
+        }
+
+        .pdf-preview {
+            width: 50%;
+            height: 300px; /* Reduced height */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .projects-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .project {
+            text-align: center;
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 200px;
+        }
+
+        .project-img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .logout-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Information</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="exit.html">Exit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Personal Info</h2>
+            <p>Hello! My name is Mora Manaswik Reddy. I am a passionate web developer with a strong background in software engineering and digital marketing. I have a keen interest in creating innovative solutions that help businesses grow and succeed.</p>
+            <p>I have a diverse skill set that includes web development, software engineering, and digital marketing. I am always eager to learn new technologies and stay up-to-date with the latest industry trends. My goal is to deliver high-quality products and services that exceed client expectations.</p>
+            <p>In my free time, I enjoy exploring new technologies, working on personal projects, and contributing to open-source communities. I believe in the power of technology to transform lives and make the world a better place. Thank you for visiting my website, and I look forward to connecting with you!</p>
+        </section>
+        <section>
+            <h2>My Projects</h2>
+            <p>Explore our latest projects that showcase our expertise and dedication.</p>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="../images/project1.jpeg" alt="Project 1" class="project-img">
+                    <p>Project 1: Description of the first project. This project focuses on...</p>
+                </div>
+                <div class="project">
+                    <img src="../images/project2.jpg" alt="Project 2" class="project-img">
+                    <p>Project 2: Description of the second project. This project aims to...</p>
+                </div>
+                <div class="project">
+                    <img src="../images/project3.jpg" alt="Project 3" class="project-img">
+                    <p>Project 3: Description of the third project. This project involves...</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>My Resume</h2>
+            <p>Download my resume to learn more about my skills, experience, and qualifications.</p>
+            <!-- Download Button -->
+            <a href="../files/myresume.pdf" download="resume.pdf" class="download-button">Download Resume</a>
+        </section>
+
+        <button class="logout-button" onclick="window.location.href='exit.html'">Logout</button>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
